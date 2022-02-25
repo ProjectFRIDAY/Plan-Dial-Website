@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <link rel="stylesheet" type="text/css" href="src/jquery.fullPage.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="src/jquery.fullPage.js"></script>
+
+        <title>Plan Dial</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="blocker" class="fixed-content">
+                <h1 id="main-title">
+                Plan Dial
+                </h1>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.friday.plandial">
+                <img src="images/google-play-badge.png" id="download-image" class="fixed-content"/>
+            </a>
+            
+            <div id="fullpage">
+                <div class="section">
+                    <div class="description">
+                        규칙적인 생활습관, <br />
+                        플랜다이얼과 빠짐없이.
+                    </div>
+                    <img src="images/p1.png" class="screenshot">
+                </div>
+                
+                <div class="section">
+                    <div class="description">
+                        규칙적인 생활을 도와드려요
+                    </div>
+                    <div class="little-description">
+                        반복되는 일들을<br>
+                        빠짐없이 알려드릴게요
+                    </div>
+                    <img src="images/p2.png" class="screenshot">
+                </div>
+                
+                <div class="section">
+                    <div class="description">
+                        용도별로 정리해뒀어요
+                    </div>
+                    <div class="little-description">
+                        취향대로 골라<br>
+                        빠르게 시작하세요
+                    </div>
+                    <img src="images/p3.png" class="screenshot">
+                </div>
+                
+                <div class="section">
+                    <div class="description">
+                        손쉽게 커스텀하세요
+                    </div>
+                    <div class="little-description">
+                        필요한 다이얼을<br>
+                        자유롭게 추가할 수 있어요
+                    </div>
+                    <img src="images/p4.png" class="screenshot">
+                </div>
+                
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                $('#fullpage').fullpage({ 
+                    scrollingSpeed: 700
+                });
+            });
+        </script>
+    </body>
+</html>

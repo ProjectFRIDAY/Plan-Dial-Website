@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+:root {
+    --background: #C7D0FA;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 5.3rem;
+}
+
+.fixed-content {
+    position: fixed;
+    z-index: 1;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+
+.little-description {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.screenshot {
+    position: absolute;
+    height: 70vh;
+    border-radius: 20px;
+    border: 5px solid black;
+    right: 17vw;
+    bottom: 15vh;
+}
+
+#container {
+    margin-left: 10vw;
+}
+
+#main-title {
+    position: absolute;
+    bottom: 0;
+    background-image: url("images/picon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 100px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+#blocker {
+    background-color: var(--background);
+    width: 500px;
+    height: 40vh;
+}
+
+#download-image {
+    bottom: 30vh;
+    width: 200px;
+    margin-left: -10px;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    #main-title {
+        padding-left: 60px;
+    }
+    
+    #blocker {
+        width: 300px;
+    }
+}
+
+@media (max-width: 780px) {
+    .screenshot {
+        display:none;
+    }
+}
+
+@media (max-height: 600px) {
+    .description {
+        font-size: 1.5rem;
+    }
+    
+    .little-description {
+        font-size: 1.1rem;
+    }
+    
+    #download-image {
+        bottom: 25vh;
+    }
+}
+
+@media (max-height: 450px) {
+    .description {
+        display: none;
+    }
+    
+    .little-description {
+        display: none;
+    }
+    
+    #download-image {
+        top: 40vh;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --background: rgb(36, 50, 66);
+    }
+  }
