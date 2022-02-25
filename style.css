@@ -5,8 +5,8 @@
 }
 
 body {
-    background-color: var(--background);
-    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -41,7 +41,9 @@ h1 {
 }
 
 #container {
-    margin-left: 10vw;
+    padding-left: 10vw;
+    background-color: var(--background);
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 #main-title {
@@ -83,7 +85,11 @@ h1 {
 
 @media (max-width: 780px) {
     .screenshot {
-        display:none;
+        display: none;
+    }
+
+    #blocker {
+        width: 90vw;
     }
 }
 
@@ -119,7 +125,7 @@ h1 {
     :root {
       --background: black;
     }
-     body {
+     #container {
          color: white;
      }
   }
