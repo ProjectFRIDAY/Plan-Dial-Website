@@ -118,6 +118,9 @@ h1 {
 
 @media (prefers-color-scheme: dark) {
     :root {
-      --background: rgb(36, 50, 66);
+      --background: black;
     }
+     body {
+         color: white;
+     }
   }
