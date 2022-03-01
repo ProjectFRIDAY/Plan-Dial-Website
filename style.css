@@ -139,4 +139,7 @@ h1 {
     #container {
         color: white;
     }
+    #friday {
+        -webkit-text-fill-color: white;
+    }
 }
