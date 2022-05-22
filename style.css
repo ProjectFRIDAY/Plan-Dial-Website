@@ -66,8 +66,14 @@ h1 {
 
 #download-image {
     bottom: 30vh;
-    width: 200px;
+    width: 150px;
     margin-left: -10px;
+}
+
+#download-image2 {
+    bottom: 30vh;
+    width: 150px;
+    margin-left: 150px;
 }
 
 #friday {
